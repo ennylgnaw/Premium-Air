@@ -1,0 +1,35 @@
+{% import "macros.html" as macros %}
+
+{% set active_page = "admin_statistics" %}
+
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="col-sm-2"></div>
+  <div class="col-sm-8">
+    <center>
+      <h1>Statistics <small>For you know what</small></h1>
+    </center>
+    <br>
+    <div class="col-sm-4">
+      <h4>
+	<center>Number of Users
+	  <br>
+	  <br>
+	{{ num_users }}
+	</center>
+      </h4>
+    </div>
+    <div class="col-sm-4">
+      <h4>
+	<center>Number of Posts
+	  <br>
+	  <br>
+	{{ num_posts }}
+	</center>
+      </h4>
+    </div>
+  </div>
+  <div class="col-sm-2"></div>
+
+{% endblock %}

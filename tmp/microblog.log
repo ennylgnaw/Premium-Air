@@ -1,0 +1,1184 @@
+2017-09-03 22:07:43,363 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 22:07:56,084 ERROR: Exception on /edit [POST] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/authenticate.py", line 17, in check_user
+    return func(*args, **kwargs)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 104, in edit
+    if form.validate_on_submit():
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask_wtf/form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/lynnewang/Desktop/PremiumAir/app/forms.py", line 51, in validate
+    user = User.query.filter_by(nickname=self.nickname.data).first()
+NameError: global name 'User' is not defined
+2017-09-03 22:08:35,101 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 22:08:46,181 ERROR: Exception on /edit [POST] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/authenticate.py", line 17, in check_user
+    return func(*args, **kwargs)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 104, in edit
+    if form.validate_on_submit():
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask_wtf/form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/lynnewang/Desktop/PremiumAir/app/forms.py", line 51, in validate
+    user = User.query.filter_by(nickname=self.nickname.data).first()
+NameError: global name 'User' is not defined
+2017-09-03 22:10:38,041 ERROR: Exception on /edit [POST] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/authenticate.py", line 17, in check_user
+    return func(*args, **kwargs)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 104, in edit
+    if form.validate_on_submit():
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask_wtf/form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/lynnewang/Desktop/PremiumAir/app/forms.py", line 51, in validate
+    return True
+NameError: global name 'User' is not defined
+2017-09-03 22:12:47,816 ERROR: Exception on /edit [POST] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/authenticate.py", line 17, in check_user
+    return func(*args, **kwargs)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 104, in edit
+    if form.validate_on_submit():
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask_wtf/form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/lynnewang/Desktop/PremiumAir/app/forms.py", line 51, in validate
+    return True
+NameError: global name 'User' is not defined
+2017-09-03 22:14:03,267 ERROR: Exception on /edit [POST] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/authenticate.py", line 17, in check_user
+    return func(*args, **kwargs)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 104, in edit
+    if form.validate_on_submit():
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask_wtf/form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/lynnewang/Desktop/PremiumAir/app/forms.py", line 51, in validate
+    return True
+NameError: global name 'User' is not defined
+2017-09-03 22:16:17,151 ERROR: Exception on /edit [POST] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/authenticate.py", line 17, in check_user
+    return func(*args, **kwargs)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 104, in edit
+    if form.validate_on_submit():
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask_wtf/form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/lynnewang/Desktop/PremiumAir/app/forms.py", line 51, in validate
+    return True
+NameError: global name 'User' is not defined
+2017-09-03 22:17:36,735 ERROR: Exception on /edit [POST] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/authenticate.py", line 17, in check_user
+    return func(*args, **kwargs)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 104, in edit
+    if form.validate_on_submit():
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask_wtf/form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/lynnewang/Desktop/PremiumAir/app/forms.py", line 51, in validate
+    return True
+NameError: global name 'User' is not defined
+2017-09-03 22:22:16,938 ERROR: Exception on /edit [POST] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/authenticate.py", line 17, in check_user
+    return func(*args, **kwargs)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 104, in edit
+    if form.validate_on_submit():
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask_wtf/form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/lynnewang/Desktop/PremiumAir/app/forms.py", line 51, in validate
+    if self.nickname.data == self.original_nickname:
+NameError: global name 'User' is not defined
+2017-09-03 22:27:50,390 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 22:27:50,700 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 22:28:20,712 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 22:35:34,376 ERROR: Exception on /create [POST] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 65, in create
+    db.session.commit()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 906, in commit
+    self.transaction.commit()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 461, in commit
+    self._prepare_impl()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 441, in _prepare_impl
+    self.session.flush()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2171, in flush
+    self._flush(objects)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2291, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2255, in _flush
+    flush_context.execute()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/unitofwork.py", line 389, in execute
+    rec.execute(self)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/unitofwork.py", line 548, in execute
+    uow
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/persistence.py", line 181, in save_obj
+    mapper, table, insert)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/persistence.py", line 835, in _emit_insert_statements
+    execute(statement, params)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 945, in execute
+    return meth(self, multiparams, params)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/sql/elements.py", line 263, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1053, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1189, in _execute_context
+    context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1402, in _handle_dbapi_exception
+    exc_info
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1182, in _execute_context
+    context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.email [SQL: u'INSERT INTO user (fname, lname, email, nickname, username, password, password_length, about_me, last_seen) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)'] [parameters: (u'Lynne', u'Wang', u'lynnexm1@gmail.com', u'Ly', u'parrot', 'pbkdf2:sha256:50000$Ego5e8cf$e6618a93670fc6ed4d8abf58dd9772d6d4f403f5e80ce6c3f2b3deed39228106', 4, None, None)]
+2017-09-03 22:40:53,091 ERROR: Exception on /index [GET] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 30, in index
+    user.last_seen = datetime.utcnow()
+AttributeError: 'NoneType' object has no attribute 'last_seen'
+2017-09-03 22:40:58,105 ERROR: Exception on /index [GET] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 30, in index
+    user.last_seen = datetime.utcnow()
+AttributeError: 'NoneType' object has no attribute 'last_seen'
+2017-09-03 22:41:13,605 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 22:41:17,279 ERROR: Exception on /index [GET] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 30, in index
+    user.last_seen = datetime.utcnow()
+AttributeError: 'NoneType' object has no attribute 'last_seen'
+2017-09-03 22:41:25,468 ERROR: Exception on /index [GET] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 30, in index
+    user.last_seen = datetime.utcnow()
+AttributeError: 'NoneType' object has no attribute 'last_seen'
+2017-09-03 22:42:20,114 ERROR: Exception on /index [GET] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 30, in index
+    user.last_seen = datetime.utcnow()
+AttributeError: 'NoneType' object has no attribute 'last_seen'
+2017-09-03 22:42:31,602 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 22:42:31,892 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 22:44:08,079 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 22:44:51,399 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 22:44:51,697 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 22:48:57,305 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 22:49:19,858 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 22:52:05,725 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 22:53:16,744 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 22:53:26,818 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 22:53:28,664 ERROR: Exception on /index [GET] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 30, in index
+    user.last_seen = datetime.utcnow()
+AttributeError: 'NoneType' object has no attribute 'last_seen'
+2017-09-03 22:53:36,042 ERROR: Exception on /index [GET] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 30, in index
+    user.last_seen = datetime.utcnow()
+AttributeError: 'NoneType' object has no attribute 'last_seen'
+2017-09-03 22:53:51,175 ERROR: Exception on /index [GET] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 30, in index
+    user.last_seen = datetime.utcnow()
+AttributeError: 'NoneType' object has no attribute 'last_seen'
+2017-09-03 23:02:11,972 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 23:02:17,846 ERROR: Exception on / [GET] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 30, in index
+    print(user.username)
+AttributeError: 'NoneType' object has no attribute 'username'
+2017-09-03 23:04:42,609 ERROR: Exception on /index [GET] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 30, in index
+    user.last_seen = datetime.utcnow()
+AttributeError: 'NoneType' object has no attribute 'username'
+2017-09-03 23:05:00,303 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 23:05:00,608 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 23:08:23,689 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 23:08:23,989 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 23:08:27,277 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 23:32:59,602 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 23:32:59,902 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 23:33:20,461 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 23:34:20,371 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 23:34:24,988 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 23:42:20,032 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 23:42:27,034 ERROR: Exception on /edit [POST] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/authenticate.py", line 17, in check_user
+    return func(*args, **kwargs)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 108, in edit
+    db.session.commit()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 906, in commit
+    self.transaction.commit()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 461, in commit
+    self._prepare_impl()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 441, in _prepare_impl
+    self.session.flush()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2171, in flush
+    self._flush(objects)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2291, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2255, in _flush
+    flush_context.execute()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/unitofwork.py", line 389, in execute
+    rec.execute(self)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/unitofwork.py", line 548, in execute
+    uow
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/persistence.py", line 177, in save_obj
+    mapper, table, update)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/persistence.py", line 737, in _emit_update_statements
+    execute(statement, multiparams)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 945, in execute
+    return meth(self, multiparams, params)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/sql/elements.py", line 263, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1053, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1189, in _execute_context
+    context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1402, in _handle_dbapi_exception
+    exc_info
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1182, in _execute_context
+    context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.nickname [SQL: u'UPDATE user SET nickname=? WHERE user.id = ?'] [parameters: (u'Lynn', 1)]
+2017-09-03 23:42:32,061 ERROR: Exception on /edit [POST] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/authenticate.py", line 17, in check_user
+    return func(*args, **kwargs)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 108, in edit
+    db.session.commit()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 906, in commit
+    self.transaction.commit()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 461, in commit
+    self._prepare_impl()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 441, in _prepare_impl
+    self.session.flush()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2171, in flush
+    self._flush(objects)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2291, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2255, in _flush
+    flush_context.execute()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/unitofwork.py", line 389, in execute
+    rec.execute(self)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/unitofwork.py", line 548, in execute
+    uow
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/persistence.py", line 177, in save_obj
+    mapper, table, update)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/persistence.py", line 737, in _emit_update_statements
+    execute(statement, multiparams)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 945, in execute
+    return meth(self, multiparams, params)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/sql/elements.py", line 263, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1053, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1189, in _execute_context
+    context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1402, in _handle_dbapi_exception
+    exc_info
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1182, in _execute_context
+    context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.nickname [SQL: u'UPDATE user SET nickname=? WHERE user.id = ?'] [parameters: (u'Lynn', 1)]
+2017-09-03 23:42:37,074 ERROR: Exception on /edit [POST] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/authenticate.py", line 17, in check_user
+    return func(*args, **kwargs)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 108, in edit
+    db.session.commit()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 906, in commit
+    self.transaction.commit()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 461, in commit
+    self._prepare_impl()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 441, in _prepare_impl
+    self.session.flush()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2171, in flush
+    self._flush(objects)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2291, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2255, in _flush
+    flush_context.execute()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/unitofwork.py", line 389, in execute
+    rec.execute(self)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/unitofwork.py", line 548, in execute
+    uow
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/persistence.py", line 177, in save_obj
+    mapper, table, update)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/persistence.py", line 737, in _emit_update_statements
+    execute(statement, multiparams)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 945, in execute
+    return meth(self, multiparams, params)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/sql/elements.py", line 263, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1053, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1189, in _execute_context
+    context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1402, in _handle_dbapi_exception
+    exc_info
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1182, in _execute_context
+    context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.nickname [SQL: u'UPDATE user SET nickname=? WHERE user.id = ?'] [parameters: (u'Lynn', 1)]
+2017-09-03 23:42:42,091 ERROR: Exception on /edit [POST] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/authenticate.py", line 17, in check_user
+    return func(*args, **kwargs)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 108, in edit
+    db.session.commit()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 906, in commit
+    self.transaction.commit()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 461, in commit
+    self._prepare_impl()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 441, in _prepare_impl
+    self.session.flush()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2171, in flush
+    self._flush(objects)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2291, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2255, in _flush
+    flush_context.execute()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/unitofwork.py", line 389, in execute
+    rec.execute(self)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/unitofwork.py", line 548, in execute
+    uow
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/persistence.py", line 177, in save_obj
+    mapper, table, update)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/persistence.py", line 737, in _emit_update_statements
+    execute(statement, multiparams)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 945, in execute
+    return meth(self, multiparams, params)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/sql/elements.py", line 263, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1053, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1189, in _execute_context
+    context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1402, in _handle_dbapi_exception
+    exc_info
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1182, in _execute_context
+    context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.nickname [SQL: u'UPDATE user SET nickname=? WHERE user.id = ?'] [parameters: (u'Lynn', 1)]
+2017-09-03 23:42:47,104 ERROR: Exception on /edit [POST] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/authenticate.py", line 17, in check_user
+    return func(*args, **kwargs)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 108, in edit
+    db.session.commit()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 906, in commit
+    self.transaction.commit()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 461, in commit
+    self._prepare_impl()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 441, in _prepare_impl
+    self.session.flush()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2171, in flush
+    self._flush(objects)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2291, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2255, in _flush
+    flush_context.execute()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/unitofwork.py", line 389, in execute
+    rec.execute(self)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/unitofwork.py", line 548, in execute
+    uow
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/persistence.py", line 177, in save_obj
+    mapper, table, update)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/orm/persistence.py", line 737, in _emit_update_statements
+    execute(statement, multiparams)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 945, in execute
+    return meth(self, multiparams, params)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/sql/elements.py", line 263, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1053, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1189, in _execute_context
+    context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1402, in _handle_dbapi_exception
+    exc_info
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1182, in _execute_context
+    context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.nickname [SQL: u'UPDATE user SET nickname=? WHERE user.id = ?'] [parameters: (u'Lynn', 1)]
+2017-09-03 23:42:53,717 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 23:48:17,928 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 23:48:19,818 ERROR: Exception on /index [GET] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 49, in index
+    posts=posts)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/templates/base.html", line 27, in template
+    {% block content %}{% endblock %}
+TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+2017-09-03 23:48:24,868 ERROR: Exception on /user/Lynne [GET] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/authenticate.py", line 17, in check_user
+    return func(*args, **kwargs)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 97, in user
+    posts=posts)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/templates/base.html", line 27, in template
+    {% block content %}{% endblock %}
+TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+2017-09-03 23:48:29,894 ERROR: Exception on /user/Lynne [GET] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/authenticate.py", line 17, in check_user
+    return func(*args, **kwargs)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 97, in user
+    posts=posts)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/templates/base.html", line 27, in template
+    {% block content %}{% endblock %}
+TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+2017-09-03 23:48:34,920 ERROR: Exception on /user/Lynne [GET] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/authenticate.py", line 17, in check_user
+    return func(*args, **kwargs)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 97, in user
+    posts=posts)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/templates/base.html", line 27, in template
+    {% block content %}{% endblock %}
+TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+2017-09-03 23:48:42,799 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-03 23:50:12,019 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 09:51:02,439 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 10:13:39,787 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 10:34:16,238 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 10:35:04,155 ERROR: Exception on /create [POST] [in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/lynnewang/Desktop/PremiumAir/app/views.py", line 66, in create
+    db.session.add(new_user.follow(new_user))
+  File "/Users/lynnewang/Desktop/PremiumAir/app/models.py", line 51, in follow
+    if not self.is_following(user):
+  File "/Users/lynnewang/Desktop/PremiumAir/app/models.py", line 61, in is_following
+    return self.followed.filter(followers.c.followed_id == user.id).count() > 0
+AttributeError: 'User' object has no attribute 'followed'
+2017-09-04 10:35:32,895 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 10:35:33,203 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 10:39:48,234 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 10:39:54,127 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 10:46:23,675 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 10:50:55,093 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 10:50:55,381 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 10:54:44,331 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 10:54:44,621 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:01:26,291 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:02:09,205 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:06:12,082 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:07:27,199 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:07:39,650 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:09:16,000 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:09:24,582 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:09:24,884 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:09:48,506 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:13:44,239 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:13:44,529 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:15:37,026 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:16:09,710 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:17:01,582 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:18:40,900 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:18:44,542 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:18:44,825 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:28:16,029 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:30:14,480 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:40:56,243 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:44:40,518 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:45:12,233 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:46:20,282 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:46:32,754 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:46:58,323 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:46:58,624 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:48:21,999 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:50:45,004 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:50:45,292 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:53:37,404 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:54:10,692 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:54:10,977 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:54:50,749 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:54:53,840 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:54:54,140 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:55:33,906 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:55:36,419 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 11:55:36,720 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:00:18,174 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:02:13,719 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:02:33,424 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:03:30,489 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:03:39,998 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:04:50,504 INFO: microblog startup [in app/__init__.py:35]
+2017-09-04 12:07:42,326 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:08:40,459 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:09:42,587 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:10:24,466 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:12:28,331 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:12:57,113 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:13:17,779 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:14:23,331 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:14:23,710 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:16:43,770 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:17:11,470 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:17:16,976 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:17:21,117 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:17:21,501 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:19:19,232 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:19:23,185 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:19:23,590 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:20:29,793 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:20:48,461 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:32:40,376 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:33:18,268 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:41:37,451 INFO: microblog startup [in app/__init__.py:35]
+2017-09-04 12:43:12,697 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:44:20,958 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:45:15,038 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:52:11,342 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 12:54:03,735 INFO: microblog startup [in app/__init__.py:35]
+2017-09-04 13:00:09,490 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 13:01:13,691 INFO: microblog startup [in app/__init__.py:35]
+2017-09-04 13:03:25,138 INFO: microblog startup [in app/__init__.py:35]
+2017-09-04 13:18:19,046 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 13:18:19,447 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:35]
+2017-09-04 13:18:27,983 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 13:21:07,101 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 13:21:07,470 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 13:23:29,586 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 13:24:04,574 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 13:24:46,097 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 13:24:46,459 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 13:26:17,001 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 13:27:11,907 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 13:27:12,321 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 13:33:31,301 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 13:40:36,748 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 13:41:26,790 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 13:42:41,015 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 13:42:59,568 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 13:42:59,948 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 13:45:43,282 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 13:45:47,583 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 13:45:47,996 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 13:50:29,499 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:30:13,390 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:30:29,892 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:30:30,243 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:31:27,384 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:31:32,128 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:31:32,517 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:32:09,424 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:32:12,976 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:32:13,378 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:32:57,326 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:33:00,439 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:33:00,829 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:36:00,142 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:36:00,522 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:43:34,460 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:43:39,548 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:43:39,937 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:44:02,631 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:44:40,489 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:44:43,931 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:44:44,319 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:44:58,921 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:48:17,615 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:48:28,196 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:48:31,284 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:48:31,674 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:49:02,437 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:49:05,112 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:49:05,505 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:49:34,258 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:49:37,544 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:49:52,038 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:49:52,484 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:50:25,335 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:52:15,018 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:52:19,508 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:52:48,624 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:52:49,013 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:53:12,670 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:53:15,431 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:53:15,823 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:53:40,551 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:54:07,343 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:55:21,148 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:55:21,511 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 21:59:42,122 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 22:23:42,814 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 22:26:59,526 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 22:30:01,111 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 22:30:53,146 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 22:33:41,556 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 22:44:37,688 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 22:44:51,169 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 22:44:51,555 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 22:48:14,478 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 22:59:32,520 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 22:59:32,919 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:02:00,122 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:04:10,516 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:04:10,904 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:09:48,609 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:09:52,156 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:09:52,560 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:10:26,360 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:10:29,889 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:10:30,286 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:12:30,515 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:12:30,927 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:12:59,850 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:13:00,248 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:13:15,317 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:13:15,704 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:15:46,900 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:15:49,477 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:15:49,869 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:17:53,848 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:18:00,363 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:18:11,832 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:18:12,260 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:19:08,706 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:19:09,318 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:22:23,093 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:23:02,012 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:25:16,135 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:25:19,271 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:25:19,651 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:26:03,718 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:26:06,637 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:26:07,027 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:26:46,898 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:26:51,123 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:26:51,495 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:29:36,863 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:56:08,842 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-04 23:56:09,268 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 10:48:49,900 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 10:48:50,640 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 10:53:08,046 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 10:53:47,482 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 10:59:49,077 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 10:59:51,535 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 11:00:09,838 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 11:00:15,180 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 11:00:25,440 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 11:00:36,607 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 11:00:38,404 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 11:00:52,265 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 11:00:53,330 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 11:01:37,231 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 11:02:39,381 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 11:04:37,834 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 11:07:40,944 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 11:07:44,417 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 11:07:51,582 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 11:08:05,232 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 11:09:18,800 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 11:12:07,127 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 11:13:45,990 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 11:13:51,226 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 11:14:29,864 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 11:14:37,425 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 11:14:47,860 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 11:14:48,253 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 22:36:24,845 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 22:36:25,540 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 22:44:41,048 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 22:44:41,462 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 22:53:19,949 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 22:53:39,013 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 22:54:39,689 INFO: microblog startup [in app/__init__.py:33]
+2017-09-05 23:05:16,981 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 23:05:24,232 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 23:05:24,619 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 23:07:28,879 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 23:07:29,265 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 23:10:28,285 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 23:10:28,701 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 23:13:51,120 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 23:13:51,524 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 23:15:00,780 INFO: microblog startup [in app/__init__.py:33]
+2017-09-05 23:17:14,350 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 23:17:19,748 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 23:17:20,155 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 23:22:04,859 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 23:22:18,305 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 23:22:18,709 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 23:27:26,956 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 23:30:04,169 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 23:30:51,175 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 23:37:57,807 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 23:40:06,397 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 23:40:06,800 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 23:40:42,641 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 23:40:45,151 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 23:40:48,457 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-05 23:40:48,855 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 00:03:42,051 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 00:04:01,169 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 00:10:48,237 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 00:12:43,847 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 00:14:59,563 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 00:15:27,335 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 00:15:34,149 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 00:15:34,538 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 00:16:46,438 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 00:23:01,570 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 00:23:02,011 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 02:16:18,922 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 02:16:19,365 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 02:20:52,952 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 02:20:59,449 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 02:21:04,123 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 02:21:04,517 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 02:21:44,429 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 17:55:23,817 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 17:55:24,641 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 18:07:06,462 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 18:32:09,743 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 18:32:45,518 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 18:32:45,896 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 18:57:36,442 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 19:04:17,978 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 19:04:18,396 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 19:17:36,546 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 19:18:48,684 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 19:19:05,322 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 19:19:39,117 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 19:24:27,199 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 19:24:27,631 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 21:01:33,873 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 21:01:34,303 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 21:02:09,748 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 21:02:10,151 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 21:11:53,554 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 21:20:39,131 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 21:51:28,103 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 21:53:22,958 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 21:53:47,805 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 21:54:05,463 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 21:56:35,713 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 21:56:55,464 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 22:02:55,728 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 22:03:05,313 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 22:05:17,088 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 22:06:07,009 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-06 22:13:15,698 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 20:09:53,776 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 20:09:54,482 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 20:10:41,469 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 20:38:09,880 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 20:41:12,089 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 20:49:13,967 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 20:49:14,392 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 20:50:26,580 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 20:50:27,020 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 21:08:01,070 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 21:08:01,500 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 21:10:28,312 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 21:10:48,976 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 21:11:08,636 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 21:11:11,304 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 21:11:11,705 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 21:12:50,097 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 21:14:50,718 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 21:15:38,736 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 21:16:41,812 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 21:18:39,393 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 21:20:33,956 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 21:26:18,817 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 23:12:53,611 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 23:13:24,358 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 23:13:44,027 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 23:17:29,697 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 23:19:03,057 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 23:30:48,322 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 23:38:03,973 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 23:39:43,430 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 23:41:25,860 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 23:42:38,013 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 23:44:08,321 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 23:44:58,254 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 23:53:39,196 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 23:53:39,604 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 23:56:00,220 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 23:56:00,599 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 23:58:48,627 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-07 23:59:28,503 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-08 00:21:37,869 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-08 00:34:42,296 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-08 00:53:22,104 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-08 00:53:47,651 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-08 00:54:05,039 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-08 00:54:05,441 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-08 00:55:52,931 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-08 00:56:31,774 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-08 00:56:48,419 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-08 00:57:17,191 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-08 00:58:23,346 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-08 01:07:19,192 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-08 20:59:07,148 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]
+2017-09-08 20:59:07,917 INFO: microblog startup [in /Users/lynnewang/Desktop/PremiumAir/app/__init__.py:33]

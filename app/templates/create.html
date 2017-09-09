@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+
+{% set active_page = "create" %}
+
+{% block content %}
+  <br>
+  <div class="col-sm-4">
+  </div>
+  <div class="col-sm-4 text-left">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+	<center>
+	  <h4>Create an Account</h4>
+	</center>
+      </div>
+      <div class="panel-body">
+	<p>What's better than air? Premium air! Distangle yourself from the plebs and rise into the elite with quadruple-purified, nature-scented, gluten-free oxygen.
+	</p>
+	<form role="form" method="POST" action="">
+	  {{ create_form.hidden_tag() }}
+	  {% if create_form.fname.errors %}
+	    <div class="form-group has-error">
+	  {% else %}
+	    <div class="form-group">
+	  {% endif %}
+	  <label for="fname">First Name:</label>
+	  {{ create_form.fname(class_="form-control", value_=create_form.fname.data) }}
+	  {% if create_form.fname.errors %}
+	    <span class="help-block" style="color: red;">{{ create_form.fname.errors[0] }}</span>
+	  {% endif %}<br><br>
+	  
+	    </div> <!-- closes the username-form-group div -->
+	    {% if create_form.lname.errors %}
+	      <div class="form-group has-error">
+	    {% else %}
+	      <div class="form-group">
+	    {% endif %}
+	    <label for="lname">Last Name:</label>
+	    {{ create_form.lname(class_="form-control", value_=create_form.lname.data) }}
+	    {% if create_form.lname.errors %}
+	      <span class="help-block" style="color: red;">{{ create_form.lname.errors[0] }}</span>
+	    {% endif %}
+	      </div><br>
+
+		    {% if create_form.email.errors %}
+		      <div class="form-group has-error">
+		    {% else %}
+		      <div class="form-group">
+		    {% endif %}
+		    <label for="email">Email: </label>
+		    {{ create_form.email(class_="form-control", value_=create_form.email.data) }}
+		    {% if create_form.email.errors %}
+		      <span class="help-block" style="color: red;">{{ create_form.email.errors[0] }}</span>
+		    {% endif %}
+		      </div>
+
+	    </div> <!-- closes the username-form-group div -->
+	    {% if create_form.nickname.errors %}
+	      <div class="form-group has-error">
+	    {% else %}
+	      <div class="form-group">
+	    {% endif %}
+	    <label for="nickname">Nickname:</label>
+	    {{ create_form.nickname(class_="form-control", value_=create_form.nickname.data) }}
+	    {% if create_form.nickname.errors %}
+	      <span class="help-block" style="color: red;">{{ create_form.nickname.errors[0] }}</span>
+	    {% endif %}
+	      </div><br>
+	      
+	      {% if create_form.username.errors %}
+		<div class="form-group has-error">
+	      {% else %}
+		<div class="form-group">
+	      {% endif %}
+	      <label for="username">Username: </label>
+	      {{ create_form.username(class_="form-control", value_=create_form.username.data) }}
+	      {% if create_form.username.errors %}
+		<span class="help-block" style="color: red;">{{ create_form.username.errors[0] }} </span>
+	      {% endif %}
+		</div><br>
+		
+		{% if create_form.password.errors %}
+		  <div class="form-group has-error">
+		{% else %}
+		  <div class="form-group">
+		{% endif %}
+		<label for="password">Password: </label>
+		{{ create_form.password(class_="form-control", value_=create_form.password.data) }}
+		{% if create_form.password.errors %}
+		  <span class="help-block" style="color: red;">{{ create_form.password.errors[0] }}</span>
+		{% endif %}
+		  </div><br>
+		  
+		  {% if create_form.password2.errors %}
+		    <div class="form-group has-error">
+		  {% else %}
+		    <div class="form-group">
+		  {% endif %}
+		  <label for="password2">Retype Password: </label>
+		  {{ create_form.password2(class_="form-control", value_=create_form.password2.data) }}
+		  {% if create_form.password2.errors %}
+		    <span class="help-block" style="color: red;">{{ create_form.password2.errors[0] }}</span>
+		  {% endif %}
+		    </div><br>
+		    		      
+		  
+						    {{ create_form.submit(class_="btn btn-primary", value_="Create") }}
+						    
+	</form>
+	</div>
+	</div>
+	</div>
+	<div class="col-sm-4"></div>
+      {% endblock %}

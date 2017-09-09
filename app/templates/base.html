@@ -1,0 +1,43 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{ title }} - microblog</title>
+    {% else %}
+    <title>microblog</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>Premium Air:
+        <a href="{{ url_for('index') }}">Home</a>
+        {% if user %}
+        | <a href="{{ url_for('user_list') }}">List of Users</a>
+        | <a href="{{ url_for('user', nickname=user.nickname) }}">Your Profile</a>
+	| <form style="display: inline;" action="{{ url_for('search') }}" method="post" name="search">{{ search_form.hidden_tag() }}{{ search_form.search(size=20) }}<input type="submit" value="Search"></form>
+
+{% if session["admin"]=='true' %}
+| <a href="{{ url_for('statistics') }}">Admin Statistics</a>
+{% endif %}
+
+        | <a href="{{ url_for('logout') }}">Logout</a>
+
+{% if user.admin %}
+        | <a href="{{ url_for('switch') }}">Switch View</a>
+{% endif %}
+
+	{% else %}
+        | <a href="{{ url_for('create') }}">Create Account</a>
+        {% endif %}
+    </div>
+    <hr>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+    {% for message in messages %}
+        <li>{{ message }} </li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+  </body>
+</html>

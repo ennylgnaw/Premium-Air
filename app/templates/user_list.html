@@ -1,0 +1,12 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+<center><h1>List of Users</h1></center>
+{% if session["admin"]=='true' %}
+<p><a href="https://drive.google.com/open?id=0B9HBY7hLxzJvZGRDZzltZ040U3M">*** Download users in csv ***</a><p><br>
+{% endif %}
+{% for user in users %}
+<p><a href="{{ url_for('user', nickname=user.nickname) }}">{{user.nickname}}</a></p>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,7 @@
+Dear {{ user.nickname }},
+
+Username: {{ user.username }}
+
+Regards,
+
+The PremiumAir admin

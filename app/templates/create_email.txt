@@ -1,0 +1,9 @@
+Dear {{ user.nickname }},
+
+You have successfully created a PremiumAir account. Click on the following link to visit our website:
+
+{{ url_for('index') }}
+
+Regards,
+
+The PremiumAir admin

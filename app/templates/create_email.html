@@ -1,0 +1,18 @@
+<p>Dear {{ user.nickname }},</p>
+<p>
+You have successfully created a PremiumAir account. Click on the following link to visit our website:
+
+<a href="{{ url_for('index') }}">
+
+</p>
+<table>
+    <tr valign="top">
+        <td><img src="{{ user.avatar(50) }}"></td>
+        <td>
+            <a href="{{ url_for('user', nickname=user.nickname, _external=True) }}">{{ user.nickname }}</a><br />
+            {{ user.about_me }}
+        </td>
+    </tr>
+</table>
+<p>Regards,</p>
+<p>The <code>PremiumAir</code> admin</p>
